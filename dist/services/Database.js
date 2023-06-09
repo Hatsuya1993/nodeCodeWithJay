@@ -13,10 +13,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-const config_1 = require("../config");
+const index_1 = require("../config/index");
 exports.default = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        mongoose_1.default.connect(config_1.MONGO_URI).then(result => {
+        mongoose_1.default.connect(index_1.MONGO_URI).then(result => {
             console.log("Successfully connect to Mongodb");
         });
     }
